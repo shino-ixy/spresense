@@ -1,0 +1,19 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+config EXTERNALS_SAMPLE_EXTLIB
+	bool "Sample External Libraries"
+	default n
+	---help---
+		Enable Sample External Libraries.
+    
+if EXTERNALS_SAMPLE_EXTLIB
+config EXTERNALS_SAMPLE_EXTLIB_DEBUGON
+	bool "Enablke Debug Print in Sample External Libraries"
+	default n
+	---help---
+		Set log enable of sample extlib component.
+
+endif # EXTERNALS_SAMPLE_EXTLIB

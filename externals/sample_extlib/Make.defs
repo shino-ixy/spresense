@@ -1,0 +1,8 @@
+############################################################################
+# sample_extlib/Make.defs
+############################################################################
+
+ifeq ($(CONFIG_EXTERNALS_SAMPLE_EXTLIB),y)
+CONFIGURED_APPS += sample_extlib
+endif
+
